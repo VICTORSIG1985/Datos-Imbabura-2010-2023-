@@ -1,0 +1,1093 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Eventos peligrosos SNGR - Imbabura</title>
+<style>
+ body {font-family: Arial, Helvetica, sans-serif; margin: 30px; background-color: #f5f5f5;}
+ h1 {font-size: 32px; margin-top: 25px; color: #2c3e50; font-weight: bold;}
+ h2 {font-size: 24px; margin-top: 30px; color: #2c3e50; font-weight: bold;}
+ h3 {font-size: 18px; margin-top: 25px; color: #34495e; font-weight: bold;}
+ table {border-collapse: collapse; width: 100%; margin-bottom: 30px; background-color: white; font-size: 17px;}
+ th, td {border: 2px solid #34495e; padding: 18px 14px; text-align: left; font-weight: bold;}
+ th {background-color: #2c3e50; color: white; font-size: 17px; font-weight: bold;}
+ td {background-color: #ffffff; font-weight: normal;}
+ tr:nth-child(even) {background-color: #ecf0f1;}
+ tr:hover {background-color: #d5dbdb;}
+ .fig {margin: 30px 0; background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 3px 8px rgba(0,0,0,0.15);}
+ .fig img {max-width: 100%; border: 2px solid #ddd; border-radius: 3px;}
+ .fig p {font-size: 14px; font-style: italic; color: #666; margin-top: 10px; line-height: 1.6;}
+ .pie {margin-top: 50px; padding-top: 25px; border-top: 3px solid #2c3e50; font-size: 16px; color: #333; line-height: 1.9;}
+ .resumen {background-color: #ecf0f1; padding: 25px; border-left: 6px solid #3498db; margin-bottom: 30px; border-radius: 3px; font-size: 17px; line-height: 1.8;}
+ ul {font-size: 17px; line-height: 1.9; margin: 15px 0;}
+ li {margin-bottom: 12px;}
+</style>
+</head>
+<body>
+<h1>Eventos peligrosos reportados por la SNGR en Imbabura (2010–2023)</h1>
+<p style="font-size: 15px; color: #666; margin-bottom: 20px;"><strong>Fuente:</strong> Matriz SNGR &ldquo;Base_Eventos_Imbabura_Filtrado&rdquo; y población cantonal INEC 2022.</p>
+
+<div class="resumen">
+<h2>Resumen ejecutivo</h2>
+<ul>
+  <li>El análisis considera <strong>3255</strong> registros de eventos peligrosos reportados por la SNGR para la provincia de Imbabura entre <strong>2010</strong> y <strong>2023</strong>.</li>
+  <li>En dicho período se contabilizan aproximadamente <strong>512</strong> personas damnificadas y <strong>59</strong> personas fallecidas.</li>
+  <li>El evento con mayor número de damnificados es <strong>DESLIZAMIENTO</strong>, mientras que el que registra más fallecidos es <strong>DESLIZAMIENTO</strong>.</li>
+  <li>El cantón con mayor número de registros es <strong>IBARRA</strong>.</li>
+  <li>Las tasas de damnificados y fallecidos por 100.000 habitantes muestran heterogeneidad entre cantones.</li>
+</ul>
+</div>
+
+<h2>Figuras principales</h2>
+
+<div class="fig">
+  <h3>Figura 1. Número de eventos por tipo de evento</h3>
+  <img src="fig1_eventos_por_evento.png" alt="Figura 1">
+</div>
+
+<div class="fig">
+  <h3>Figura 2. Número de eventos por cantón</h3>
+  <img src="fig2_eventos_por_canton.png" alt="Figura 2">
+</div>
+
+<div class="fig">
+  <h3>Figura 3. Evolución anual de damnificados y fallecidos (2010–2023)</h3>
+  <img src="fig3_serie_damnificados_fallecidos.png" alt="Figura 3">
+</div>
+
+<div class="fig">
+  <h3>Figura 4. Número de eventos por año y cantón</h3>
+  <img src="fig4_hist_eventos_canton_anio.png" alt="Figura 4">
+</div>
+
+<div class="fig">
+  <h3>Figura 5. Eventos reportados por cantón</h3>
+  <img src="fig5_mapa_eventos_canton.png" alt="Figura 5">
+</div>
+
+<div class="fig">
+  <h3>Figura 6. Tasa de damnificados por 100.000 habitantes por cantón</h3>
+  <img src="fig6_mapa_tasa_damnificados.png" alt="Figura 6">
+</div>
+
+<div class="fig">
+  <h3>Figura 6B. Tasa de fallecidos por 100.000 habitantes por cantón</h3>
+  <img src="fig6b_mapa_tasa_fallecidos.png" alt="Figura 6B">
+</div>
+
+<div class="fig">
+  <h3>Figura 7. Análisis comparativo: Eventos, Damnificados y Fallecidos por cantón</h3>
+  <img src="fig7_eventos_damnificados_fallecidos.png" alt="Figura 7">
+</div>
+
+<h2>Tablas de resumen</h2>
+
+<h3>Tabla 1. Resumen por tipo de evento</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>EVENTO</th>
+      <th>N_REGISTROS</th>
+      <th>DAMNIFICADOS</th>
+      <th>FALLECIDOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>INCENDIO FORESTAL</td>
+      <td>2270</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>DESLIZAMIENTO</td>
+      <td>397</td>
+      <td>199</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>INCENDIO ESTRUCTURAL</td>
+      <td>215</td>
+      <td>165</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>INUNDACION</td>
+      <td>125</td>
+      <td>71</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>COLAPSO ESTRUCTURAL DE INFRAESTRUCTURA</td>
+      <td>100</td>
+      <td>53</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>SISMO</td>
+      <td>40</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SOCAVAMIENTO</td>
+      <td>23</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>VENDAVAL</td>
+      <td>18</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>EXPLOSION</td>
+      <td>15</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>INTOXICACION</td>
+      <td>14</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ALUVION (FLUJOS)</td>
+      <td>12</td>
+      <td>13</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>TORMENTA ELECTRICA</td>
+      <td>9</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>HUNDIMIENTO</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EPIDEMIA</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CONTAMINACION AMBIENTAL</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GRANIZADA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Tabla 2. Resumen por cantón (con tasas)</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>CANTON</th>
+      <th>N_EVENTOS</th>
+      <th>DAMNIFICADOS</th>
+      <th>FALLECIDOS</th>
+      <th>POB2022</th>
+      <th>VIV2022</th>
+      <th>TASA_DAMN_100K</th>
+      <th>TASA_FALL_100K</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>232</td>
+      <td>28</td>
+      <td>1</td>
+      <td>53771</td>
+      <td>17330</td>
+      <td>52.072679</td>
+      <td>1.859739</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>511</td>
+      <td>104</td>
+      <td>6</td>
+      <td>53081</td>
+      <td>19147</td>
+      <td>195.926980</td>
+      <td>11.303480</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>1249</td>
+      <td>207</td>
+      <td>33</td>
+      <td>217469</td>
+      <td>83755</td>
+      <td>95.185981</td>
+      <td>15.174577</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>578</td>
+      <td>82</td>
+      <td>17</td>
+      <td>114360</td>
+      <td>48322</td>
+      <td>71.703393</td>
+      <td>14.865338</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>276</td>
+      <td>42</td>
+      <td>2</td>
+      <td>13366</td>
+      <td>6039</td>
+      <td>314.230136</td>
+      <td>14.963340</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>409</td>
+      <td>49</td>
+      <td>0</td>
+      <td>17969</td>
+      <td>7299</td>
+      <td>272.691858</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Tabla 3. Serie anual de damnificados y fallecidos</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>ANIO</th>
+      <th>DAMNIFICADOS</th>
+      <th>FALLECIDOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2010</td>
+      <td>20</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>132</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>29</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>42</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>42</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>18</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>20</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>10</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>74</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>93</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Tabla 4. Eventos por cantón y año</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>CANTON</th>
+      <th>ANIO</th>
+      <th>N_EVENTOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2010</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2011</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2012</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2013</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2014</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2015</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2016</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2017</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2018</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2019</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2020</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2021</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2022</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>ANTONIO ANTE</td>
+      <td>2023</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2010</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2011</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2012</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2013</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2014</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2015</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2016</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2017</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2018</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2019</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2020</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2021</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2022</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>COTACACHI</td>
+      <td>2023</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2010</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2011</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2012</td>
+      <td>189</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2013</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2014</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2015</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2016</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2017</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2018</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2019</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2020</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2021</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2022</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td>IBARRA</td>
+      <td>2023</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2010</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2011</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2012</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2013</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2014</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2015</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2016</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2017</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2018</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2019</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2020</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2021</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2022</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>OTAVALO</td>
+      <td>2023</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2010</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2011</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2012</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2013</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2014</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2015</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2016</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2017</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2018</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2019</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2020</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2021</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2022</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>PIMAMPIRO</td>
+      <td>2023</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2010</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2011</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2012</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2013</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2014</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2015</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2016</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2017</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2018</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2019</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2020</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2021</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2022</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>URCUQUI</td>
+      <td>2023</td>
+      <td>93</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Tabla 5. Matriz F-T-I por tipo de evento</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>EVENTO</th>
+      <th>N_REGISTROS</th>
+      <th>DAMNIFICADOS</th>
+      <th>FALLECIDOS</th>
+      <th>N_ANIOS_CON_EVENTO</th>
+      <th>N_CANTONES_AFECTADOS</th>
+      <th>PORCENTAJE_CANTONES</th>
+      <th>PERIODO_ANALIZADO_ANIOS</th>
+      <th>INTERVALO_MEDIO_ANIOS</th>
+      <th>F_VALOR</th>
+      <th>T_VALOR</th>
+      <th>DAMNIFICADOS_TOTALES</th>
+      <th>PORCENTAJE_POB_AFECTADA</th>
+      <th>I_VALOR</th>
+      <th>CALIFICACION_TOTAL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>INCENDIO FORESTAL</td>
+      <td>2270</td>
+      <td>5</td>
+      <td>0</td>
+      <td>14</td>
+      <td>6</td>
+      <td>100.000000</td>
+      <td>14</td>
+      <td>1.000000</td>
+      <td>3</td>
+      <td>3</td>
+      <td>5</td>
+      <td>0.001064</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>DESLIZAMIENTO</td>
+      <td>397</td>
+      <td>199</td>
+      <td>29</td>
+      <td>14</td>
+      <td>6</td>
+      <td>100.000000</td>
+      <td>14</td>
+      <td>1.000000</td>
+      <td>3</td>
+      <td>3</td>
+      <td>199</td>
+      <td>0.042339</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>INCENDIO ESTRUCTURAL</td>
+      <td>215</td>
+      <td>165</td>
+      <td>16</td>
+      <td>14</td>
+      <td>6</td>
+      <td>100.000000</td>
+      <td>14</td>
+      <td>1.000000</td>
+      <td>3</td>
+      <td>3</td>
+      <td>165</td>
+      <td>0.035105</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>INUNDACION</td>
+      <td>125</td>
+      <td>71</td>
+      <td>0</td>
+      <td>14</td>
+      <td>6</td>
+      <td>100.000000</td>
+      <td>14</td>
+      <td>1.000000</td>
+      <td>3</td>
+      <td>3</td>
+      <td>71</td>
+      <td>0.015106</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>COLAPSO ESTRUCTURAL DE INFRAESTRUCTURA</td>
+      <td>100</td>
+      <td>53</td>
+      <td>4</td>
+      <td>12</td>
+      <td>6</td>
+      <td>100.000000</td>
+      <td>14</td>
+      <td>1.166667</td>
+      <td>3</td>
+      <td>3</td>
+      <td>53</td>
+      <td>0.011276</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>SISMO</td>
+      <td>40</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>5</td>
+      <td>83.333333</td>
+      <td>14</td>
+      <td>2.800000</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>SOCAVAMIENTO</td>
+      <td>23</td>
+      <td>0</td>
+      <td>2</td>
+      <td>7</td>
+      <td>5</td>
+      <td>83.333333</td>
+      <td>14</td>
+      <td>2.000000</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>VENDAVAL</td>
+      <td>18</td>
+      <td>3</td>
+      <td>1</td>
+      <td>9</td>
+      <td>5</td>
+      <td>83.333333</td>
+      <td>14</td>
+      <td>1.555556</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000638</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>EXPLOSION</td>
+      <td>15</td>
+      <td>3</td>
+      <td>1</td>
+      <td>10</td>
+      <td>5</td>
+      <td>83.333333</td>
+      <td>14</td>
+      <td>1.400000</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.000638</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>INTOXICACION</td>
+      <td>14</td>
+      <td>0</td>
+      <td>1</td>
+      <td>6</td>
+      <td>5</td>
+      <td>83.333333</td>
+      <td>14</td>
+      <td>2.333333</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>ALUVION (FLUJOS)</td>
+      <td>12</td>
+      <td>13</td>
+      <td>2</td>
+      <td>3</td>
+      <td>5</td>
+      <td>83.333333</td>
+      <td>14</td>
+      <td>4.666667</td>
+      <td>2</td>
+      <td>3</td>
+      <td>13</td>
+      <td>0.002766</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>TORMENTA ELECTRICA</td>
+      <td>9</td>
+      <td>0</td>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+      <td>66.666667</td>
+      <td>14</td>
+      <td>3.500000</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>HUNDIMIENTO</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>3</td>
+      <td>50.000000</td>
+      <td>14</td>
+      <td>3.500000</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>EPIDEMIA</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>16.666667</td>
+      <td>14</td>
+      <td>4.666667</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>CONTAMINACION AMBIENTAL</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>33.333333</td>
+      <td>14</td>
+      <td>14.000000</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>GRANIZADA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>16.666667</td>
+      <td>14</td>
+      <td>14.000000</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+<div class="pie">
+  <p><strong>Realizado por:</strong><br>
+  Lic. Víctor Hugo Pinto Páez</p>
+  <p><strong>Alumno de:</strong><br>
+  Especialidad en Geoinformación con mención en proyectos de Ingeniería<br>
+  Maestría en Prevención y Gestión de Riesgos con mención en Variabilidad Climática y Resiliencia Territorial<br>
+  Maestría en Teledetección y Sistemas de Información Geográfica<br>
+  Maestría en Educación con mención en Docencia e Investigación en Educación Superior.</p>
+</div>
+
+</body>
+</html>
